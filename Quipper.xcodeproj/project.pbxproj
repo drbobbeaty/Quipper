@@ -1,0 +1,479 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3226CCD22108E9D90054850C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3226CCD12108E9D90054850C /* AppDelegate.swift */; };
+		3226CCD42108E9DA0054850C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3226CCD32108E9DA0054850C /* Assets.xcassets */; };
+		3226CCD72108E9DA0054850C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3226CCD52108E9DA0054850C /* MainMenu.xib */; };
+		3226CCE32108E9DB0054850C /* QuipperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3226CCE22108E9DB0054850C /* QuipperTests.swift */; };
+		3226CCF22108EA300054850C /* Quip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3226CCED2108EA2F0054850C /* Quip.swift */; };
+		3226CCF32108EA300054850C /* MrBig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3226CCEE2108EA2F0054850C /* MrBig.swift */; };
+		3226CCF42108EA300054850C /* CypherWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3226CCEF2108EA2F0054850C /* CypherWord.swift */; };
+		3226CCF52108EA300054850C /* Legend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3226CCF02108EA2F0054850C /* Legend.swift */; };
+		3226CCF62108EA300054850C /* PuzzlePiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3226CCF12108EA300054850C /* PuzzlePiece.swift */; };
+		3226CCF82108F3A60054850C /* words in Resources */ = {isa = PBXBuildFile; fileRef = 3226CCF72108F3A60054850C /* words */; };
+		3226CCFA210918800054850C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3226CCF9210918800054850C /* README.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3226CCDF2108E9DB0054850C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3226CCC62108E9D90054850C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3226CCCD2108E9D90054850C;
+			remoteInfo = Quipper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3226CCCE2108E9D90054850C /* Quipper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quipper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3226CCD12108E9D90054850C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3226CCD32108E9DA0054850C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3226CCD62108E9DA0054850C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		3226CCD82108E9DA0054850C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3226CCD92108E9DA0054850C /* Quipper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Quipper.entitlements; sourceTree = "<group>"; };
+		3226CCDE2108E9DB0054850C /* QuipperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuipperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3226CCE22108E9DB0054850C /* QuipperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuipperTests.swift; sourceTree = "<group>"; };
+		3226CCE42108E9DB0054850C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3226CCED2108EA2F0054850C /* Quip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quip.swift; sourceTree = "<group>"; };
+		3226CCEE2108EA2F0054850C /* MrBig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MrBig.swift; sourceTree = "<group>"; };
+		3226CCEF2108EA2F0054850C /* CypherWord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CypherWord.swift; sourceTree = "<group>"; };
+		3226CCF02108EA2F0054850C /* Legend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Legend.swift; sourceTree = "<group>"; };
+		3226CCF12108EA300054850C /* PuzzlePiece.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PuzzlePiece.swift; sourceTree = "<group>"; };
+		3226CCF72108F3A60054850C /* words */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words; sourceTree = "<group>"; };
+		3226CCF9210918800054850C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3226CCCB2108E9D90054850C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3226CCDB2108E9DB0054850C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3226CCC52108E9D90054850C = {
+			isa = PBXGroup;
+			children = (
+				3226CCF9210918800054850C /* README.md */,
+				3226CCD02108E9D90054850C /* Quipper */,
+				3226CCE12108E9DB0054850C /* QuipperTests */,
+				3226CCCF2108E9D90054850C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3226CCCF2108E9D90054850C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3226CCCE2108E9D90054850C /* Quipper.app */,
+				3226CCDE2108E9DB0054850C /* QuipperTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3226CCD02108E9D90054850C /* Quipper */ = {
+			isa = PBXGroup;
+			children = (
+				3226CCF72108F3A60054850C /* words */,
+				3226CCEF2108EA2F0054850C /* CypherWord.swift */,
+				3226CCF02108EA2F0054850C /* Legend.swift */,
+				3226CCEE2108EA2F0054850C /* MrBig.swift */,
+				3226CCF12108EA300054850C /* PuzzlePiece.swift */,
+				3226CCED2108EA2F0054850C /* Quip.swift */,
+				3226CCD12108E9D90054850C /* AppDelegate.swift */,
+				3226CCD32108E9DA0054850C /* Assets.xcassets */,
+				3226CCD52108E9DA0054850C /* MainMenu.xib */,
+				3226CCD82108E9DA0054850C /* Info.plist */,
+				3226CCD92108E9DA0054850C /* Quipper.entitlements */,
+			);
+			path = Quipper;
+			sourceTree = "<group>";
+		};
+		3226CCE12108E9DB0054850C /* QuipperTests */ = {
+			isa = PBXGroup;
+			children = (
+				3226CCE22108E9DB0054850C /* QuipperTests.swift */,
+				3226CCE42108E9DB0054850C /* Info.plist */,
+			);
+			path = QuipperTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3226CCCD2108E9D90054850C /* Quipper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3226CCE72108E9DB0054850C /* Build configuration list for PBXNativeTarget "Quipper" */;
+			buildPhases = (
+				3226CCCA2108E9D90054850C /* Sources */,
+				3226CCCB2108E9D90054850C /* Frameworks */,
+				3226CCCC2108E9D90054850C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Quipper;
+			productName = Quipper;
+			productReference = 3226CCCE2108E9D90054850C /* Quipper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3226CCDD2108E9DB0054850C /* QuipperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3226CCEA2108E9DB0054850C /* Build configuration list for PBXNativeTarget "QuipperTests" */;
+			buildPhases = (
+				3226CCDA2108E9DB0054850C /* Sources */,
+				3226CCDB2108E9DB0054850C /* Frameworks */,
+				3226CCDC2108E9DB0054850C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3226CCE02108E9DB0054850C /* PBXTargetDependency */,
+			);
+			name = QuipperTests;
+			productName = QuipperTests;
+			productReference = 3226CCDE2108E9DB0054850C /* QuipperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3226CCC62108E9D90054850C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Bob Beaty";
+				TargetAttributes = {
+					3226CCCD2108E9D90054850C = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					3226CCDD2108E9DB0054850C = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 3226CCCD2108E9D90054850C;
+					};
+				};
+			};
+			buildConfigurationList = 3226CCC92108E9D90054850C /* Build configuration list for PBXProject "Quipper" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3226CCC52108E9D90054850C;
+			productRefGroup = 3226CCCF2108E9D90054850C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3226CCCD2108E9D90054850C /* Quipper */,
+				3226CCDD2108E9DB0054850C /* QuipperTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3226CCCC2108E9D90054850C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3226CCF82108F3A60054850C /* words in Resources */,
+				3226CCD42108E9DA0054850C /* Assets.xcassets in Resources */,
+				3226CCFA210918800054850C /* README.md in Resources */,
+				3226CCD72108E9DA0054850C /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3226CCDC2108E9DB0054850C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3226CCCA2108E9D90054850C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3226CCF22108EA300054850C /* Quip.swift in Sources */,
+				3226CCF52108EA300054850C /* Legend.swift in Sources */,
+				3226CCF62108EA300054850C /* PuzzlePiece.swift in Sources */,
+				3226CCF32108EA300054850C /* MrBig.swift in Sources */,
+				3226CCF42108EA300054850C /* CypherWord.swift in Sources */,
+				3226CCD22108E9D90054850C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3226CCDA2108E9DB0054850C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3226CCE32108E9DB0054850C /* QuipperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3226CCE02108E9DB0054850C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3226CCCD2108E9D90054850C /* Quipper */;
+			targetProxy = 3226CCDF2108E9DB0054850C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3226CCD52108E9DA0054850C /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3226CCD62108E9DA0054850C /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3226CCE52108E9DB0054850C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3226CCE62108E9DB0054850C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		3226CCE82108E9DB0054850C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Quipper/Quipper.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Quipper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.themanfromspud.Quipper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		3226CCE92108E9DB0054850C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Quipper/Quipper.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Quipper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.themanfromspud.Quipper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		3226CCEB2108E9DB0054850C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = QuipperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.themanfromspud.QuipperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quipper.app/Contents/MacOS/Quipper";
+			};
+			name = Debug;
+		};
+		3226CCEC2108E9DB0054850C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = QuipperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.themanfromspud.QuipperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quipper.app/Contents/MacOS/Quipper";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3226CCC92108E9D90054850C /* Build configuration list for PBXProject "Quipper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3226CCE52108E9DB0054850C /* Debug */,
+				3226CCE62108E9DB0054850C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3226CCE72108E9DB0054850C /* Build configuration list for PBXNativeTarget "Quipper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3226CCE82108E9DB0054850C /* Debug */,
+				3226CCE92108E9DB0054850C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3226CCEA2108E9DB0054850C /* Build configuration list for PBXNativeTarget "QuipperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3226CCEB2108E9DB0054850C /* Debug */,
+				3226CCEC2108E9DB0054850C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3226CCC62108E9D90054850C /* Project object */;
+}
