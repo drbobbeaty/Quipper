@@ -39,7 +39,7 @@ class Quip {
 	 method will return true, otherwise, it will return false.
 	 */
 	func attemptWordBlockAttack(_ words: [String]) {
-//		NSLog("Clearing out all old data for the attack...")
+		NSLog("Clearing out all old data for the attack...")
 		// clear everything out that might be left-over
 		solutions.removeAll()
 		pieces.forEach { $0.clearPossibles() }
@@ -48,11 +48,11 @@ class Quip {
 		// sort in place, by the number of matches
 		pieces.sort { $0.matches < $1.matches }
 		// ...and run the attach on the least matches
-//		NSLog("List of Possibles:")
-//		for p in pieces {
-//			NSLog("  ... \(p.cypherword.cyphertext) :: \(p.possibles.count)")
-//		}
-//		NSLog("Starting the word block attack...")
+		NSLog("List of Possibles:")
+		for p in pieces {
+			NSLog("  ... \(p.cypherword.cyphertext) :: \(p.possibles.count)")
+		}
+		NSLog("Starting the word block attack...")
 		let begin = NSDate().timeIntervalSince1970 * 1000
 		doWordBlockAttack(at: 0, with: legend)
 		NSLog("\(solutions.count) Solution(s) took \(NSDate().timeIntervalSince1970 * 1000 - begin) msec")

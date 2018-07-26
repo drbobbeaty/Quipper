@@ -696,8 +696,12 @@
                             <font key="font" metaFont="menu"/>
                             <menu key="menu" id="lCW-s2-jEm">
                                 <items>
-                                    <menuItem title="A" state="on" id="8v2-iU-Oii"/>
-                                    <menuItem title="B" id="liH-zZ-vVc"/>
+                                    <menuItem title="A" state="on" id="8v2-iU-Oii">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="B" id="liH-zZ-vVc">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
                                     <menuItem title="C" id="Szj-my-OkV">
                                         <modifierMask key="keyEquivalentModifierMask"/>
                                     </menuItem>
@@ -767,7 +771,9 @@
                                     <menuItem title="Y" id="UC7-cz-Jgu">
                                         <modifierMask key="keyEquivalentModifierMask"/>
                                     </menuItem>
-                                    <menuItem title="Z" id="dUG-Cr-79h"/>
+                                    <menuItem title="Z" id="dUG-Cr-79h">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
                                 </items>
                             </menu>
                         </popUpButtonCell>
@@ -780,8 +786,12 @@
                             <font key="font" metaFont="menu"/>
                             <menu key="menu" id="7fK-r1-nhA">
                                 <items>
-                                    <menuItem title="A" state="on" id="19L-lL-23R"/>
-                                    <menuItem title="B" id="uo1-FK-wYM"/>
+                                    <menuItem title="A" state="on" id="19L-lL-23R">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="B" id="uo1-FK-wYM">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
                                     <menuItem title="C" id="09E-el-FML">
                                         <modifierMask key="keyEquivalentModifierMask"/>
                                     </menuItem>
@@ -851,7 +861,9 @@
                                     <menuItem title="Y" id="x4Y-4w-Wal">
                                         <modifierMask key="keyEquivalentModifierMask"/>
                                     </menuItem>
-                                    <menuItem title="Z" id="2Eg-f4-FhK"/>
+                                    <menuItem title="Z" id="2Eg-f4-FhK">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
                                 </items>
                             </menu>
                         </popUpButtonCell>
@@ -873,7 +885,7 @@
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="testDecode:" target="6qs-dH-Q96" id="iDG-0z-6Os"/>
+                            <action selector="decode:" target="6qs-dH-Q96" id="Qe4-PB-veN"/>
                         </connections>
                     </button>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qpT-0w-ZzQ">

@@ -38,10 +38,19 @@ import AppKit
 	 puzzle. When it's done, we'll pick off the solutions and see what we see.
 	 */
 	@IBAction func decode(_ sender: AnyObject) {
-		let ct = self.cyphertextLine.stringValue
-		let cs = self.cypherChar.stringValue
-		let ps = self.plainChar.stringValue
-		NSLog("decode()")
+		// get values from the UI
+		var ct = self.cyphertextLine.stringValue
+		var cs = self.cypherChar.titleOfSelectedItem!
+		var ps = self.plainChar.titleOfSelectedItem!
+		// default to the test values if the cyphertext is missing
+		if ct.isEmpty {
+			ct = "Fict O ncc bivteclnbklzn O lcpji ukl pt vzglcddp"
+			cs = "b"
+			ps = "t"
+			self.cyphertextLine.stringValue = ct
+			self.cypherChar.selectItem(withTitle: cs.uppercased())
+			self.plainChar.selectItem(withTitle: ps.uppercased())
+		}
 		solve(ct, where: cs[cs.startIndex], equals: ps[ps.startIndex])
 	}
 	
