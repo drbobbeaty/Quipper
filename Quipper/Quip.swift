@@ -25,7 +25,7 @@ class Quip {
 		self.pieces = Array(Set(all)).map { PuzzlePiece(String($0)) }
 	}
 
-	/*!
+	/**
 	 This is the entry point for attempting the "Word Block" attack on the
 	 cyphertext. The idea is that we start with the initial legend, and then
 	 for each plaintext word in the first cypherword that matches the legend,
@@ -37,6 +37,9 @@ class Quip {
 	
 	 If this attack results in a successful decoding of the cyphertext, this
 	 method will return true, otherwise, it will return false.
+
+	 - parameter words: Array of strings to be the working dictionary for the
+	                    solution of the quip
 	 */
 	func attemptWordBlockAttack(_ words: [String]) {
 		NSLog("Clearing out all old data for the attack...")
@@ -58,7 +61,7 @@ class Quip {
 		NSLog("\(solutions.count) Solution(s) took \(NSDate().timeIntervalSince1970 * 1000 - begin) msec")
 	}
 	
-	/*!
+	/**
 	This is the recursive entry point for attempting the "Word Block" attack
 	 on the cyphertext starting at the 'index'th word in the quip. The idea is
 	 that we start with the provided legend, and then for each plaintext word
@@ -68,6 +71,10 @@ class Quip {
 	
 	 If this attack results in a successful decoding of the cyphertext, this
 	 method will return true, otherwise, it will return false.
+
+	 - parameter idx: The zero-biased index of the puzzle piece to work on.
+	 - parameter key: The Legend to use as 'good' for the solution
+	 - returns: True, if the attack was successful.
 	 */
 	@discardableResult private func doWordBlockAttack(at idx: Int, with key: Legend) -> Bool {
 		let p = pieces[idx]

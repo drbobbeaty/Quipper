@@ -31,7 +31,7 @@ import AppKit
 		patterns.removeAll()
 	}
 	
-	/*!
+	/**
 	 This action is typically the target of a button the user will press on when
 	 they want us to solve the provided puzzle. It's going to create a Quip with
 	 the cyphertext and the initial start at a legend and then ask it to solve the
@@ -54,7 +54,7 @@ import AppKit
 		solve(ct, where: cs[cs.startIndex], equals: ps[ps.startIndex])
 	}
 	
-	/*!
+	/**
 	 This method runs a simple test decoding so that we can be sure that things
 	 are working properly. It's going to use the cyphertext:
 	   Fict O ncc bivteclnbklzn O lcpji ukl pt vzglcddp
@@ -68,11 +68,15 @@ import AppKit
 		solve("Fict O ncc bivteclnbklzn O lcpji ukl pt vzglcddp", where:"b", equals:"t")
 	}
 	
-	/*!
+	/**
 	 This method is what really runs the decoder, and it takes the cyphertext
 	 string as well as the initial part of the legend, and will load up the
 	 Quip and have it do it's thing, placing the solution in the text field
 	 when it's done. Pretty simple. I just needed a single method to do this.
+
+	 - parameter cyphertext: The source cyphertext to decode
+	 - parameter cypherChar: The cypher character that's part of the hint
+	 - parameter plainChar: The plain character that's part of the hint
 	 */
 	func solve(_ cyphertext: String, where cypherChar: Character, equals plainChar: Character) {
 		NSLog("Solving puzzle: '\(cyphertext)' where \(cypherChar)=\(plainChar)")
