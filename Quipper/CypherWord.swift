@@ -131,11 +131,13 @@ extension String {
 	 Attributes of a string that return a string that is the pattern of that
 	 word where the values are the index of the character. This is a simple
 	 baseline pattern generator for the words so they are comparable.
-	
+
+	```
 	   => "see".pattern
 	   "abb"
 	   => "rabbit".pattern
 	   "abccef"
+	```
 	 */
 	var pattern: String {
 		get {
