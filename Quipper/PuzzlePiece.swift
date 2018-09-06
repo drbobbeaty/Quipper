@@ -103,7 +103,7 @@ class PuzzlePiece : Equatable {
 	/**
 	 This method will clear out all the possible plaintext words for this
 	 piece.
-	*/
+	 */
 	func clearPossibles() {
 		possibles.removeAll()
 	}
@@ -111,7 +111,7 @@ class PuzzlePiece : Equatable {
 	/**
 	 This is what we have to add for Equatable so that we can make simple
 	 comparisons on these pieces.
-	*/
+	 */
 	static func == (lhs: PuzzlePiece, rhs: PuzzlePiece) -> Bool {
 		return (lhs.cypherword == rhs.cypherword) && (lhs.possibles == rhs.possibles)
 	}

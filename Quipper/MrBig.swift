@@ -57,11 +57,17 @@ import AppKit
 	/**
 	 This method runs a simple test decoding so that we can be sure that things
 	 are working properly. It's going to use the cyphertext:
+	```
 	   Fict O ncc bivteclnbklzn O lcpji ukl pt vzglcddp
+	```
 	 with the initial legend:
+	```
 	   b = t
+	```
 	 and *should* solve to the plaintext:
+	```
 	   When I see thunderstorms I reach for an umbrella
+	```
 	 If not, then we're in trouble.
 	*/
 	@IBAction func testDecode(_ sender: AnyObject) {
