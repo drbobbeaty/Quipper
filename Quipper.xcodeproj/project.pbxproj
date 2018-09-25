@@ -163,9 +163,11 @@
 				TargetAttributes = {
 					3226CCCD2108E9D90054850C = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 					};
 					3226CCDD2108E9DB0054850C = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 						TestTargetID = 3226CCCD2108E9D90054850C;
 					};
 				};
@@ -382,7 +384,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.themanfromspud.Quipper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -400,7 +402,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.themanfromspud.Quipper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -419,7 +421,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.themanfromspud.QuipperTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quipper.app/Contents/MacOS/Quipper";
 			};
 			name = Debug;
@@ -439,7 +441,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.themanfromspud.QuipperTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quipper.app/Contents/MacOS/Quipper";
 			};
 			name = Release;
