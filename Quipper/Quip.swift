@@ -94,13 +94,13 @@ class Quip {
 						}
 					}
 				} else {
-					//
+					// ...more to do, so copy Legend and incorporate word
 					let nextKey = key.copy() as! Legend
 					if nextKey.incorporate(cw.cyphertext, as: pt) {
 						solved = doWordBlockAttack(at: idx + 1, with: nextKey)
 					}
 				}
-				if solved { return  }
+				if solved { return }
 			}
 		}
 		return solutions.count > 0
