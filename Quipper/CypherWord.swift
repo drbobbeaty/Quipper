@@ -144,7 +144,7 @@ extension String {
 			let ascii: [Character] = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
 			var ans = ""
 			for c in self {
-				ans.append(ascii[self.index(of: c)!.encodedOffset])
+				ans.append(ascii[self.firstIndex(of: c)!.utf16Offset(in: self)])
 			}
 			return ans
 		}

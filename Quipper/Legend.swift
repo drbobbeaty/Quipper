@@ -70,7 +70,7 @@ class Legend : Equatable, NSCopying {
 	 - returns: The cypher character for this plain character, or "\0"
 	 */
 	func cypherForPlain(_ plain: Character) -> Character {
-		if let i = legend.index(of: plain.lowerCase) {
+		if let i = legend.firstIndex(of: plain.lowerCase) {
 			let cc = Character(UnicodeScalar(i + LCai)!)
 			return (plain.asciiValue < LCai ? cc.upperCase : cc)
 		}
@@ -101,7 +101,7 @@ class Legend : Equatable, NSCopying {
 		// make sure the additional mappings don't conflict with what we have
 		for (cc, pc) in zip(ct, pt) {
 			let cco = cc.asciiValue - LCai
-			if (legend[cco] != pc) && (legend[cco] != "\0" || legend.index(of: pc) != nil) {
+			if (legend[cco] != pc) && (legend[cco] != "\0" || legend.firstIndex(of: pc) != nil) {
 				return false
 			}
 		}
