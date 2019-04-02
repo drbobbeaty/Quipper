@@ -143,7 +143,7 @@ extension String {
 		get {
 			let ascii: [Character] = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
 			var ans = ""
-			let src = Array(self.utf8)
+			let src = Array(self.lowercased().utf8)
 			for c in src {
 				ans.append(ascii[src.firstIndex(of: c)!])
 			}
